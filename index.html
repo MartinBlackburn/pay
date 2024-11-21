@@ -76,7 +76,7 @@
 
             <ul class="cardGrid cardGrid--wide">
                 <li>
-                    <a class="card" href="https://share.octopus.energy/stone-frog-876">
+                    <a id="octopusReferLink" class="card" href="https://share.octopus.energy/stone-frog-876">
                         <div class="content">
                             <h2 class="card__title">Octopus Energy <span>&rarr;</span></h2>
                             <p>Free £50 credit when you switch</p>
@@ -87,7 +87,7 @@
                 </li>
 
                 <li>
-                    <a class="card" href="https://join.monzo.com/c/06w7d5n">
+                    <a id="monzoReferLink" class="card" href="https://join.monzo.com/c/06w7d5n">
                         <div class="content">
                             <h2 class="card__title">Monzo <span>&rarr;</span></h2>
                             <p>£5 free when you sign up and make a card payment</p>
@@ -99,26 +99,8 @@
             </ul>
         </main>
 
-        <script>
-            const searchParams = new URLSearchParams(window.location.search);
-
-            const amount = searchParams.get("amount") || null;
-            const ref = searchParams.get("ref") || null;
-
-            const monzoLink = document.getElementById("monzoLink");
-            const paypalLink = document.getElementById("paypalLink");
-
-            if (amount) {
-                monzoLink.href += amount;
-                paypalLink.href += amount;
-            }
-
-            if (ref) {
-                monzoLink.href += `?d=${ref}`;
-                paypalLink.href += `?d=${ref}`;
-            }
-        </script>
-
         <script src="./background.js"></script>
+        <script src="./links.js"></script>
+        <script src="./refer.js"></script>
     </body>
 </html>
