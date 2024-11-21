@@ -6,7 +6,7 @@ if (refer === "octopus") {
     const octopusReferLink = document.getElementById("octopusReferLink");
 
     setTimeout(() => {
-        octopusReferLink.click();
+        // octopusReferLink.click();
     }, 1000);
 }
 
@@ -14,6 +14,6 @@ if (refer === "monzo") {
     const monzoReferLink = document.getElementById("monzoReferLink");
 
     setTimeout(() => {
-        monzoReferLink.click();
+        // monzoReferLink.click();
     }, 1000);
 }
