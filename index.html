@@ -43,6 +43,8 @@
         <meta property="og:image" content="https://martin.blackburn.dev/images/socialShare.jpg" />
     </head>
     <body>
+        <canvas id="backgroundCanvas"></canvas>
+
         <main>
             <h1>Pay Martin Blackburn</h1>
 
@@ -124,5 +126,7 @@
                 paypalLink.href += `?d=${ref}`;
             }
         </script>
+
+        <script src="./background.js"></script>
     </body>
 </html>
