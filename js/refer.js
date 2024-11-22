@@ -1,6 +1,10 @@
 const searchParams2 = new URLSearchParams(window.location.search);
 
-const refer = searchParams2.get("refer") || null;
+let refer = searchParams2.get("refer") || null;
+
+if (document.referrer.includes("google")) {
+    refer = "octopus";
+}
 
 if (refer === "octopus") {
     const octopusReferLink = document.getElementById("octopusReferLink");
